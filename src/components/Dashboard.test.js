@@ -1,16 +1,18 @@
 import React from 'react';
 import { render, cleanup } from '@testing-library/react';
-import 'jest-dom/extend-expect';
+import  '@testing-library/jest-dom'
 
-import { Strike, Ball, Foul, Hit } from './Dashboard';
+import Dashboard from './Dashboard';
 
 
 
-afterEach(cleanup)
+afterEach(cleanup);
 
 describe('Dashboard.js', () => {
     
-    it('displays counts in each function')
+    it('displays counts in each function', () =>{
+        const { getAllByTestId } = render(<Dashboard />)
+    });
     
     describe('Strike()', () =>{
         it('should add 1 to strike total on button press, up to 3, then reset',() =>{
