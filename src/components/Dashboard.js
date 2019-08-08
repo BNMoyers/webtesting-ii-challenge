@@ -32,14 +32,19 @@ const Dashboard = () => {
     };
 
     return(
-        <div>
+        <>
+        <div className = 'counts'>
+            <span data-testid='count'>{strikeCount}</span>
+            {/* <span data-testid='count'>{ballCount}</span> */}
+        </div>
+        <div className = 'controls'>
             <button onClick={strike}>Strike!</button>
             <button onClick={ball}>Ball</button>
             <button onClick={foul}>Foul</button>
             <button onClick={hit}>Hit!</button>
 
-            
         </div>
+        </>
     );
 }
 
