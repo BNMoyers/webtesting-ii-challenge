@@ -1,0 +1,1 @@
+//the dashboard needs to have a set of four buttons, for 'strike, ball, foul, or hit'. When pressed, these buttons should update the display component, including resetting it when necessary. 
