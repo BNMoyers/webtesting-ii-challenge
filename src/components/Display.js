@@ -6,8 +6,8 @@ const Display = ({ ballCount,  strikeCount }) => {
         <>
         <div className='scoreboard'>
             <h1>Title the Thing</h1>
-            <div className='data-box'>{ballCount}</div>
-            <div className='data-box'>{strikeCount} </div>
+            <div className='data-box'>{ballCount}<p>Balls</p></div>
+            <div className='data-box'>{strikeCount}<p>Strikes</p> </div>
 
         </div>
         </>

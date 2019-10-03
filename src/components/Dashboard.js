@@ -2,13 +2,13 @@
 
 import React, { useState } from 'react';
 
-const Dashboard = () =>{
+const Dashboard = (props) =>{
    return(
        <div className = 'dashboard'>
-           <button>Ball</button>
-           <button>Strike</button>
-           <button>Foul</button>
-           <button>Hit</button>
+           <button data-testid='ball' onClick={props.ball}>Ball</button>
+           <button onClick={props.strike}>Strike</button>
+           <button onClick={props.foul}>Foul</button>
+           <button onClick={props.hit}>Hit</button>
 
 
 
