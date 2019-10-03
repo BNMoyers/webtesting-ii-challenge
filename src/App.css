@@ -1,0 +1,88 @@
+body{
+  background-image: url('./components/tim-gouw-VvQSzMJ_h0U-unsplash.jpg');
+  background-size: cover;
+
+}
+
+.App{
+  
+    width: 58%;
+    margin: 10rem auto;
+    background-color: black;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    color: white;
+    border-radius: 0.5rem;
+    margin-top: 10rem;
+    padding: 5rem;
+    border: 4px solid #aaaaaa;
+    display: flex;
+    flex-direction: column;
+  }
+  .scoreboard {
+    display: flex;
+    justify-content: space-around;
+    place-items: center;
+    
+  }
+  h1{
+    font-family: "Ozone";
+    font-size: 6rem;
+  }
+  .balls,
+  .strikes {
+    margin: 1rem;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    place-items: center;
+    border: 3px solid white;
+    border-radius: 0.5rem;
+    width: 15rem;
+    font-family: "Ozone";
+    font-size: 9rem;
+    padding: 2rem;
+    text-align: center;
+    background-color: var(--black);
+    border: 2px solid white;
+    border-radius: 6px;
+  }
+  
+  .strikes {
+    background-color: #693831;
+  }
+  
+  .balls {
+    background-color: #e1ad01;
+  }
+
+  .ball-title{
+  text-transform: uppercase;
+  font-size: 3rem;
+  padding: 2rem;
+  }
+
+  .dashboard {
+    display: flex;
+    justify-content: space-around;
+    place-items: center;
+    height: 20rem;
+  }
+
+  button{
+    font-family: "Ozone";
+  font-size: 2rem;
+  color: white;
+  text-align: center;
+  background-color: forestgreen;
+  padding: 1.6rem;
+  border: 1px solid white;
+  border-radius: 4px;
+  width: 50%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 1rem;
+  }
