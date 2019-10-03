@@ -5,9 +5,9 @@ const Display = ({ ballCount,  strikeCount }) => {
     return(
         <>
         <div className='scoreboard'>
-            <h1>Title the Thing</h1>
-            <div className='data-box'>{ballCount}<p>Balls</p></div>
-            <div className='data-box'>{strikeCount}<p>Strikes</p> </div>
+            <h1>Play the Sport</h1>
+            <div className='balls'>{ballCount}<p className='ball-title'>Balls</p></div>
+            <div className='strikes'>{strikeCount}<p className='ball-title'>Strikes</p> </div>
 
         </div>
         </>
