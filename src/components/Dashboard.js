@@ -3,16 +3,18 @@
 import React, { useState } from 'react';
 
 const Dashboard = () =>{
-    let [strikeCount, setStrikeCount] = useState(0);
-    let [ballCount, setBallCount] = useState(0);
+   return(
+       <div className = 'dashboard'>
+           <button>Ball</button>
+           <button>Strike</button>
+           <button>Foul</button>
+           <button>Hit</button>
 
-    const ball = () => ballCount < 4 ? setBallCount +1 : (setBallCount = 0, setStrikeCount = 0);
-    
-    const strike = () => strikeCount < 3 ? setStrikeCount +1 : (setStrikeCount = 0, setBallCount = 0);
-    
-    const hit = () => (setBallCount = 0, setStrikeCount = 0)
-    
-    const foul = () => strikeCount = 2 ? strikeCount : setStrikeCount +1;
+
+
+       </div>
+
+   )
         
     
 }
